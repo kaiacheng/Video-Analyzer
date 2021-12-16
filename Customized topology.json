@@ -155,9 +155,10 @@
       }
     ],
     "sinks": [
-      {
-        "@type": "#Microsoft.VideoAnalyzer.FileSink",
-        "name": "fileSink",
+            {
+        "@type": "#Microsoft.VideoAnalyzer.VideoSink",
+        "name": "videoSink",
+        "videoName": "sample-motion-http-extension",
         "inputs": [
           {
             "nodeName": "signalGateProcessor",
@@ -170,9 +171,13 @@
             ]
           }
         ],
-        "fileNamePattern": "sampleFiles-${System.DateTime}",
-        "maximumSizeMiB": "512",
-        "baseDirectoryPath": "/var/media"
+        "videoCreationProperties": {
+          "title": "sample-motion-with-http-extension",
+          "description": "Sample video using motion with HTTP extension",
+          "segmentLength": "PT30S"
+        },
+        "localMediaCachePath": "/var/lib/videoanalyzer/tmp/",
+        "localMediaCacheMaximumSizeMiB": "2048"
       },
       {
         "@type": "#Microsoft.VideoAnalyzer.IotHubMessageSink",
