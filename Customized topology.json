@@ -122,8 +122,8 @@
           "url": "${httpAIServerAddress}",
           "credentials": {
             "@type": "#Microsoft.VideoAnalyzer.UsernamePasswordCredentials",
-            "username": "user",
-            "password": "test123"
+            "username": "rapqacontainer",
+            "password": "wN7O72WUENcT1n+rZi5AsDhVtcBYFzmH"
           }
         },
         "image": {
