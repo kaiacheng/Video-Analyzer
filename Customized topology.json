@@ -56,6 +56,12 @@
         "type": "String",
         "description": "Height of the video frame to be received from AVA.",
         "default": "416"
+      },
+      {
+        "name": "fileSinkOutputName",
+        "type": "String",
+        "description": "file sink output name",
+        "default": "filesinkOutput"
       }
     ],
     "sources": [
