@@ -68,6 +68,7 @@
       {
         "@type": "#Microsoft.VideoAnalyzer.RtspSource",
         "name": "rtspSource",
+        "transport": "tcp",
         "endpoint": {
           "@type": "#Microsoft.VideoAnalyzer.UnsecuredEndpoint",
           "url": "${rtspUrl}",
