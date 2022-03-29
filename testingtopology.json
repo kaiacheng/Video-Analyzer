@@ -187,7 +187,7 @@
           "hubOutputName": "${hubSinkOutputName}",
           "inputs": [
             {
-              "nodeName": "motionDetection"
+              "nodeName": "httpExtension"
             }
           ]
         }
