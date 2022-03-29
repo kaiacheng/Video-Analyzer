@@ -34,12 +34,6 @@
           "default": "http://cv/score"
         },
         {
-          "name": "hubSinkOutputName",
-          "type": "String",
-          "description": "hub sink output name",
-          "default": "inferenceOutput"
-        },
-        {
           "name": "imageScaleMode",
           "type": "String",
           "description": "image scaling mode",
