@@ -34,6 +34,12 @@
           "default": "http://cv/score"
         },
         {
+        "name": "hubSinkOutputName",
+        "type": "String",
+        "description": "hub sink output name",
+        "default": "inferenceOutput"
+        },
+        {
           "name": "imageScaleMode",
           "type": "String",
           "description": "image scaling mode",
@@ -178,10 +184,10 @@
         {
           "@type": "#Microsoft.VideoAnalyzer.IotHubMessageSink",
           "name": "hubSink",
-          "hubOutputName": "inferenceOutput",
+          "hubOutputName": "${hubSinkOutputName}",
           "inputs": [
             {
-              "nodeName": "motionDetection"
+              "nodeName": "httpExtension"
             }
           ]
         }
