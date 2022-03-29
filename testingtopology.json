@@ -184,10 +184,10 @@
         {
           "@type": "#Microsoft.VideoAnalyzer.IotHubMessageSink",
           "name": "hubSink",
-          "hubOutputName": "${hubSinkOutputName}",
+          "hubOutputName": "inferenceOutput",
           "inputs": [
             {
-              "nodeName": "httpExtension"
+              "nodeName": "motionDetection"
             }
           ]
         }
